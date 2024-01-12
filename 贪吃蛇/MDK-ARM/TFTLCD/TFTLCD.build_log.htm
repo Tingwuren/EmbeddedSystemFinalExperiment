@@ -1,0 +1,113 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=GMZI6-DPFQR-01EP1-CD1NA-0XQR6-9CUQL
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+C:\Users\22376\OneDrive - bupt.edu.cn\文档\课程\大三上\嵌入式系统\综合实验\贪吃蛇\MDK-ARM\TFTLCD.uvprojx
+Project File Date:  12/23/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'TFTLCD'
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_ll_fsmc.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_sram.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_it.c...
+compiling gpio.c...
+compiling main.c...
+../Inc/start_game.h(6): warning:  #1295-D: Deprecated declaration musicinit - give arg types
+  void musicinit();
+../Src/main.c(93): warning:  #223-D: function "initialize" declared implicitly
+  	initialize(); // 展示游戏首页
+../Src/main.c: 2 warnings, 0 errors
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_uart.c...
+assembling startup_stm32f407xx.s...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling fsmc.c...
+compiling initialize.c...
+../Inc/initialize.h(1): warning:  #1295-D: Deprecated declaration initialize - give arg types
+  void initialize();
+..\Src\initialize.c: 1 warning, 0 errors
+compiling user_selection.c...
+..\Src\user_selection.c(15): warning:  #223-D: function "KEY_Scan" declared implicitly
+  			select_key = KEY_Scan(0);
+..\Src\user_selection.c(44): warning:  #223-D: function "KEY_Scan" declared implicitly
+  			select_key = KEY_Scan(0);
+..\Src\user_selection.c(78): warning:  #223-D: function "KEY_Scan" declared implicitly
+  			select_key = KEY_Scan(0);
+..\Src\user_selection.c(112): warning:  #223-D: function "KEY_Scan" declared implicitly
+  			select_key = KEY_Scan(0);
+..\Src\user_selection.c(146): warning:  #223-D: function "KEY_Scan" declared implicitly
+  			select_key = KEY_Scan(0);
+..\Src\user_selection.c(196): warning:  #223-D: function "initialize" declared implicitly
+  					initialize();
+..\Src\user_selection.c: 6 warnings, 0 errors
+compiling usart.c...
+compiling start_game.c...
+../Inc/start_game.h(6): warning:  #1295-D: Deprecated declaration musicinit - give arg types
+  void musicinit();
+..\Src\start_game.c(123): warning:  #223-D: function "KEY_Scan" declared implicitly
+  	select_key = KEY_Scan(0);
+..\Src\start_game.c(239): warning:  #223-D: function "KEY_Scan" declared implicitly
+  		select_key = KEY_Scan(0);
+..\Src\start_game.c: 3 warnings, 0 errors
+compiling system_stm32f4xx.c...
+compiling lcd.c...
+..\Src\lcd.c(64): warning:  #177-D: function "lcd_read_gram"  was declared but never referenced
+  static unsigned short lcd_read_gram(unsigned int x,unsigned int y)
+..\Src\lcd.c: 1 warning, 0 errors
+linking...
+Program Size: Code=10776 RO-data=425080 RW-data=32 ZI-data=2832  
+"TFTLCD\TFTLCD.axf" - 0 Error(s), 13 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM::CMSIS:CORE:5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_TFTLCD
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:00:11
+</pre>
+</body>
+</html>
